@@ -1,5 +1,6 @@
 <?php
 
+namespace Singleton;
 class Singleton
 {
     private static ?Singleton $instance = null;
@@ -22,7 +23,11 @@ class Singleton
         echo "Singleton работает\n";
     }
 
-    private function __clone() {}
+    private function __clone()
+    {
+    }
 
-    private function __wakeup() {}
+    private function __wakeup()
+    {
+    }
 }
